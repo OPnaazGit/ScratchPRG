@@ -4,12 +4,25 @@
         <h1 style="text-align: center; color: aqua;">Scratch PRG</h1>
         <h3 style="text-align: center; color: red;">Made by "Naaz"</h3>
         <br>
+        <h2>Games</h2>
         <h3>Snake Game_(Definetly not made by NOKIA)</h3>
         <br>
         <p>INSTRUCTiONS : Move by using joysticks and
          W A S D buttons</p>
          <p>By (Developer)Naaz</p>
-         <iframe src="https://scratch.mit.edu/projects/790305032/embed" allowtransparency="true" width="896" height="414" frameborder="0" scrolling="no" allowfullscreen></iframe>
-         <button type="button" onclick="requestFullscreen(true)">fullscreen</button>
+         <iframe src="https://scratch.mit.edu/projects/790305032/embed" allowtransparency="true" width="896" height="414" frameborder="0" scrolling="no" allowfullscreen control id="H-1"></iframe>
+         <button type="button" onclick="request1()">fullscreen</button>
     </body>
+    <script>
+        var elem = document.getElementById("H-1");
+        function request1() {
+          if (elem.request1()n) {
+            elem.request1();
+          } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+          }
+        }
+        </script>
 </html>
